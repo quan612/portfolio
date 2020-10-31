@@ -10,14 +10,14 @@ export const headData = {
 // HERO DATA
 export const heroData = {
   title: '',
-  name: '',
+  name: 'Quan Huynh',
   subtitle: '',
   cta: '',
 };
 
 // ABOUT DATA
 export const aboutData = {
-  img: 'profile.jpg',
+  img: 'tennis.png',
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
@@ -27,31 +27,90 @@ export const aboutData = {
 // PROJECTS DATA
 export const projectsData = [
   {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    id: 'jira',
+    img_url: '../images/jira-transparent.gif',
+    title: 'Project Management',
+    info:
+      'A Jira-clone full stack web application that user can create issues and sub-tasks within project.',
+
+    url: 'https://jira-client-prod.herokuapp.com/',
+    source: 'https://github.com/quan612/IssueManagement',
+    features: [
+      'Easy to understand project structure with separated client and server side.',
+      'Written in modern React, functional components with latest hooks api.',
+      'Various custom UI elements that are reusable across the site.',
+      'Drag and drop items.',
+    ],
+    backgroundColor: '#d2e8f2',
+    stacks: [
+      { name: 'react', icon: '../images/react.svg' },
+      { name: 'graphql', icon: '../images/graphql.svg' },
+      { name: 'react-apollo', icon: '../images/apollo-graphql.svg' },
+    ],
+    laptop: '../images/jira-laptop.png',
+    phone: '../images/jira-phone.png',
   },
   {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
-    info2: '',
-    url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    id: 'testlink',
+    img_url: '../images/project-management.png',
+    title: 'Test Link Simulation',
+    info:
+      'My first React application when I tried to learn web development to tailor my skill as a tester. I was thinking to learn unit test with mocha and chai, but I ended up building this application. It has a lot of flaws but I decided to have it as a lesson.',
+
+    url: 'http://test-link-react.herokuapp.com/',
+    source: 'https://github.com/quan612/TestLinkSimulation',
+    features: [
+      'React using hooks API',
+      'Simple state management with Redux thunk.',
+      'Using a 3rd party API from testlink',
+    ],
+    backgroundColor: '#989EAC',
+    stacks: [
+      { name: 'react', icon: '../images/react.svg' },
+      { name: 'redux', icon: '../images/redux.svg' },
+    ],
+    laptop: '',
+    phone: '',
   },
   {
-    id: nanoid(),
-    img: 'project.jpg',
-    title: '',
-    info: '',
+    id: 'selenium',
+    img_url: '../images/test-automation.gif',
+    title: 'Selenium test automation',
+    info:
+      'A simple Selenium project to demonstrate building test automation following Page Object Models and Factory Pattern. ',
     info2: '',
     url: '',
-    repo: 'https://github.com/cobidev/react-simplefolio', // if no repo, the button will not show up
+    source: 'https://github.com/quan612/TestPlaneTicket',
+    backgroundColor: '#9bc6ba',
+    stacks: [{ name: 'java', icon: '../images/java.svg' }],
+    laptop: '',
+    phone: '',
+  },
+
+  {
+    id: 'rental',
+    img_url: '../images/rental.gif',
+    title: 'Rent Booking Application',
+    info: 'Work in progress - Rental booking application built with Angular, NodeJS and MongoDb',
+    info2: '',
+    url: '',
+    repo: '',
+    backgroundColor: '#d64e00',
+    laptop: '',
+    phone: '',
+  },
+  {
+    id: 'portfolio',
+    img_url: '../images/portfolio.webp',
+    title: 'This portfolio',
+    info: 'Built with Gatsby, React, and Frame Motion',
+    info2: '',
+    url: '',
+    source: 'https://github.com/quan612/rental-booking-angular',
+    repo: '',
+    backgroundColor: '#FFD1DC',
+    laptop: '',
+    phone: '',
   },
 ];
 
@@ -67,23 +126,13 @@ export const footerData = {
   networks: [
     {
       id: nanoid(),
-      name: 'twitter',
-      url: '',
-    },
-    {
-      id: nanoid(),
-      name: 'codepen',
-      url: '',
-    },
-    {
-      id: nanoid(),
       name: 'linkedin',
-      url: '',
+      url: 'https://www.linkedin.com/in/quan-huynh-83604ba3/',
     },
     {
       id: nanoid(),
       name: 'github',
-      url: '',
+      url: 'https://github.com/quan612',
     },
   ],
 };

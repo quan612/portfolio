@@ -1,13 +1,13 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import App from '../components/App';
+
+import Hero from '../components/Hero/Hero';
 import { headData } from '../mock/data';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../style/main.scss';
 
 export default () => {
   const { title, lang, description } = headData;
-
   return (
     <>
       <Helmet>
@@ -16,7 +16,7 @@ export default () => {
         <html lang={lang || 'en'} />
         <meta name="description" content={description || 'Gatsby Simplefolio'} />
       </Helmet>
-      <App />
+      <Hero />
     </>
   );
 };

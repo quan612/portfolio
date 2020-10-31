@@ -1,0 +1,79 @@
+.nav-wrapper {
+  height: 60px;
+  width: 60vw;
+  background: inherit;
+  line-height: 60px;
+  border-radius: 50px;
+
+  text-align: center;
+
+  margin: auto;
+  display: block;
+
+  @media only screen and (max-width: 991px) {
+    width: 100vw;
+  }
+}
+
+nav {
+  position: relative;
+  display: flex;
+}
+
+nav a {
+  flex: 1;
+  width: 100%;
+  z-index: 1;
+  cursor: pointer;
+
+  color: #1d1f20;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none !important;
+  transition: color 0.6s ease;
+}
+
+nav a label {
+  position: relative;
+  z-index: -1;
+  color: #1d1f20;
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.6s ease;
+}
+nav #home:checked ~ a.home,
+nav #projects:checked ~ a.projects,
+nav #contact:checked ~ a.contact,
+nav #heart:checked ~ a.heart,
+nav #about:checked ~ a.about {
+  color: #fff;
+}
+
+nav .tab {
+  position: absolute;
+  height: 80%;
+  width: 33%;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  border-radius: 50px;
+  background: linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
+  transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  top: 0.5rem;
+}
+nav #projects:checked ~ .tab {
+  left: 33%;
+}
+nav #contact:checked ~ .tab {
+  left: 66%;
+}
+// nav #heart:checked ~ .tab {
+//   left: 60%;
+// }
+// nav #about:checked ~ .tab {
+//   left: 80%;
+// }
+nav input {
+  display: none;
+}

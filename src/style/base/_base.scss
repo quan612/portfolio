@@ -4,5 +4,47 @@ html {
 
 body {
   font-family: 'Montserrat', sans-serif;
-  text-align: center;
+  background-color: #fbfbfb;
+}
+
+.content-wrapper {
+  padding-top: 3rem;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: row;
+
+  max-width: 1200px;
+  margin: auto;
+
+  @include respond(phone) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .flex-item {
+    flex: 1;
+  }
+
+  .flex-item-image {
+    flex: 1;
+    text-align: center;
+  }
+
+  img {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}
+
+//fix for about image
+.fixed-image {
+  display: block !important;
+  margin: auto !important;
 }
