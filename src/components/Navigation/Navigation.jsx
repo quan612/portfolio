@@ -20,19 +20,12 @@ const NavigationBar = () => {
         {/* <input type="radio" name="tab" id="heart" />
         <input type="radio" name="tab" id="about" /> */}
 
-        <Link
-          to={'/'}
-          state={{ prevPath: location.pathname }}
-          className="home"
-          data-tag="home"
-          onClick={(e) => handleOnClick(e)}
-        >
+        <Link to={'/'} className="home" data-tag="home" onClick={(e) => handleOnClick(e)}>
           Home
         </Link>
 
         <Link
           to={'/projects'}
-          state={{ prevPath: location.pathname }}
           className="projects"
           data-tag="projects"
           onClick={(e) => handleOnClick(e)}
@@ -42,7 +35,6 @@ const NavigationBar = () => {
 
         <Link
           to={'/contact'}
-          state={{ prevPath: location.pathname }}
           className="contact"
           data-tag="contact"
           onClick={(e) => handleOnClick(e)}
