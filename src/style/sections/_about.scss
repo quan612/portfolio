@@ -11,6 +11,13 @@
     margin-top: 5rem;
     height: 38vh;
 
+    @media only screen and (max-width: 577px) {
+      height: auto;
+    }
+    @media only screen and (max-width: 991px) {
+      height: auto;
+    }
+
     &__info {
       display: flex;
       height: 100%;
