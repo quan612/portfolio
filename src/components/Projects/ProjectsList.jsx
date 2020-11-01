@@ -62,7 +62,7 @@ const ProjectsList = ({ location }) => {
   return (
     <div className="content-wrapper">
       <div className="projects-container">
-        {projects.map((item, index) => {
+        {projects.map((item) => {
           return (
             <div key={item.id} className="list-item ">
               <Link

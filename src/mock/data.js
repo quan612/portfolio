@@ -101,7 +101,7 @@ export const projectsData = [
   },
   {
     id: 'portfolio',
-    img_url: '/portfolio.webp',
+    img_url: '/portfolio.gif',
     title: 'This portfolio',
     info: 'Built with Gatsby, React, and Frame Motion',
     info2: '',

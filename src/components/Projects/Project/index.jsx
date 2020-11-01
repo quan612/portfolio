@@ -101,7 +101,7 @@ const Project = (props) => {
           </div>
           <div className="details">
             <Link className="back" to={`/projects`}>
-              Going Back
+              <span className="back">Going Back</span>
             </Link>
 
             <div className="detail-box">
