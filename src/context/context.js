@@ -20,10 +20,12 @@ const PortfolioProvider = ({ children }) => {
     stacks: [],
     laptop: '',
     phone: '',
+    windowScrollPosition: 0,
   });
 
   const getCords = (id) => {
     setCords(document.getElementById(id).getBoundingClientRect());
+    setCurrentProject({ windowScrollPosition: window.scrollY });
   };
 
   const handleSetProject = (id) => {

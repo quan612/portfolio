@@ -5,14 +5,21 @@ import PortfolioContext from '../../context/context';
 import './Projects.scss';
 
 const ProjectsList = ({ location }) => {
-  const { projects, getCords, cords, currentProject, handleSetProject } = useContext(
-    PortfolioContext
-  );
+  const {
+    projects,
+    getCords,
+    cords,
+    currentProject,
+    handleSetProject,
+    windowScrollPosition,
+  } = useContext(PortfolioContext);
   const [state, setState] = useState({});
   console.log(location);
 
   useLayoutEffect(() => {
     if (currentProject.id && location.state && !location.state.prevPath) {
+      // window.scrollTo(0, windowScrollPosition);
+
       setState({
         styles: {
           transform: `translate(${cords.x * -1}px, ${cords.y * -1}px)`,
