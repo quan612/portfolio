@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 import { Link } from 'gatsby';
 import './styles.scss';
@@ -6,6 +6,13 @@ import './styles.scss';
 import { Navbar } from 'react-bootstrap';
 
 const NavigationBar = () => {
+  const [currentUrl, setCurrentUrl] = useState('');
+
+  useEffect(() => {
+    if (typeof window == 'undefined') return;
+    setCurrentUrl(window.location.href);
+  });
+
   const handleOnClick = (e) => {
     let targetRadio = document.getElementById(e.target.getAttribute('data-tag'));
     targetRadio.click();
@@ -20,7 +27,13 @@ const NavigationBar = () => {
         {/* <input type="radio" name="tab" id="heart" />
         <input type="radio" name="tab" id="about" /> */}
 
-        <Link to={'/'} className="home" data-tag="home" onClick={(e) => handleOnClick(e)}>
+        <Link
+          to={'/'}
+          className="home"
+          data-tag="home"
+          onClick={(e) => handleOnClick(e)}
+          state={{ prevPath: currentUrl }}
+        >
           Home
         </Link>
 
@@ -29,6 +42,7 @@ const NavigationBar = () => {
           className="projects"
           data-tag="projects"
           onClick={(e) => handleOnClick(e)}
+          state={{ prevPath: currentUrl }}
         >
           Projects
         </Link>
@@ -38,6 +52,7 @@ const NavigationBar = () => {
           className="contact"
           data-tag="contact"
           onClick={(e) => handleOnClick(e)}
+          state={{ prevPath: currentUrl }}
         >
           Contact
         </Link>

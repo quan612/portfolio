@@ -21,14 +21,14 @@ export const aboutData = {
   paragraphOne: '',
   paragraphTwo: '',
   paragraphThree: '',
-  resume: 'https://www.resumemaker.online/es.php', // if no resume, the button will not show up
+  resume: 'https://www.resumemaker.online/es.php',
 };
 
 // PROJECTS DATA
 export const projectsData = [
   {
     id: 'jira',
-    img_url: '../images/jira-transparent.gif',
+    img_url: '/jira-transparent.gif',
     title: 'Project Management',
     info:
       'A Jira-clone full stack web application that user can create issues and sub-tasks within project.',
@@ -43,9 +43,9 @@ export const projectsData = [
     ],
     backgroundColor: '#d2e8f2',
     stacks: [
-      { name: 'react', icon: '../images/react.svg' },
-      { name: 'graphql', icon: '../images/graphql.svg' },
-      { name: 'react-apollo', icon: '../images/apollo-graphql.svg' },
+      { name: 'react', icon: '/react.svg' },
+      { name: 'graphql', icon: '/graphql.svg' },
+      { name: 'react-apollo', icon: '/apollo-graphql.svg' },
     ],
     laptop: '../images/jira-laptop.png',
     phone: '../images/jira-phone.png',

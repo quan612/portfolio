@@ -1,5 +1,5 @@
 import React from 'react';
-// import "./src/css/style.css";
+
 import { PortfolioProvider } from './src/context/context';
 
 // const Wrapper = ({ children }) => {
@@ -11,11 +11,5 @@ import { PortfolioProvider } from './src/context/context';
 // };
 
 export const wrapPageElement = ({ element }) => {
-  return (
-    <PortfolioProvider>
-      {/* <Wrapper> */}
-      {element}
-      {/* </Wrapper> */}
-    </PortfolioProvider>
-  );
+  return <PortfolioProvider>{element}</PortfolioProvider>;
 };

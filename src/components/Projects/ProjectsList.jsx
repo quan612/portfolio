@@ -9,6 +9,7 @@ const ProjectsList = ({ location }) => {
     PortfolioContext
   );
   const [state, setState] = useState({});
+  console.log(location);
 
   useLayoutEffect(() => {
     if (currentProject.id && location.state && !location.state.prevPath) {
