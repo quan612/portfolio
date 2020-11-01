@@ -47,12 +47,12 @@ export const projectsData = [
       { name: 'graphql', icon: '/graphql.svg' },
       { name: 'react-apollo', icon: '/apollo-graphql.svg' },
     ],
-    laptop: '../images/jira-laptop.png',
-    phone: '../images/jira-phone.png',
+    laptop: '/jira-laptop.png',
+    phone: '/jira-phone.png',
   },
   {
     id: 'testlink',
-    img_url: '../images/project-management.png',
+    img_url: '/project-management.png',
     title: 'Test Link Simulation',
     info:
       'My first React application when I tried to learn web development to tailor my skill as a tester. I was thinking to learn unit test with mocha and chai, but I ended up building this application. It has a lot of flaws but I decided to have it as a lesson.',
@@ -66,15 +66,15 @@ export const projectsData = [
     ],
     backgroundColor: '#989EAC',
     stacks: [
-      { name: 'react', icon: '../images/react.svg' },
-      { name: 'redux', icon: '../images/redux.svg' },
+      { name: 'react', icon: '/react.svg' },
+      { name: 'redux', icon: '/redux.svg' },
     ],
     laptop: '',
     phone: '',
   },
   {
     id: 'selenium',
-    img_url: '../images/test-automation.gif',
+    img_url: '/test-automation.gif',
     title: 'Selenium test automation',
     info:
       'A simple Selenium project to demonstrate building test automation following Page Object Models and Factory Pattern. ',
@@ -82,14 +82,14 @@ export const projectsData = [
     url: '',
     source: 'https://github.com/quan612/TestPlaneTicket',
     backgroundColor: '#9bc6ba',
-    stacks: [{ name: 'java', icon: '../images/java.svg' }],
+    stacks: [{ name: 'java', icon: '/java.svg' }],
     laptop: '',
     phone: '',
   },
 
   {
     id: 'rental',
-    img_url: '../images/rental.gif',
+    img_url: '/rental.gif',
     title: 'Rent Booking Application',
     info: 'Work in progress - Rental booking application built with Angular, NodeJS and MongoDb',
     info2: '',
@@ -101,7 +101,7 @@ export const projectsData = [
   },
   {
     id: 'portfolio',
-    img_url: '../images/portfolio.webp',
+    img_url: '/portfolio.webp',
     title: 'This portfolio',
     info: 'Built with Gatsby, React, and Frame Motion',
     info2: '',

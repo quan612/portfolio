@@ -55,7 +55,7 @@ const Project = (props) => {
               {currentProject.laptop && currentProject.laptop !== '' && (
                 <div className="device device__laptop">
                   <img
-                    src="/images/laptop.png"
+                    src="/laptop.png"
                     alt="Laptop Showing example Application we build in the course"
                   />
                   <img
@@ -78,7 +78,7 @@ const Project = (props) => {
               {currentProject.phone && currentProject.phone !== '' && (
                 <div className="device device__phone">
                   <img
-                    src="/images/phone.png"
+                    src="/phone.png"
                     alt="iPhone Showing example Application we build in the course"
                   />
 
