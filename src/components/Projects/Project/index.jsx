@@ -112,14 +112,18 @@ const Project = (props) => {
             {currentProject.url !== '' && (
               <div className="detail-box">
                 <h3>Demo</h3>
-                <a href={currentProject.url}>{currentProject.url}</a>
+                <a href={currentProject.url} target="_blank">
+                  {currentProject.url}
+                </a>
               </div>
             )}
 
             {currentProject.source && currentProject.source !== '' && (
               <div className="detail-box">
                 <h3>Source</h3>
-                <a href={currentProject.source}>{currentProject.source}</a>
+                <a href={currentProject.source} target="_blank">
+                  {currentProject.source}
+                </a>
               </div>
             )}
 
