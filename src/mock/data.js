@@ -32,10 +32,9 @@ export const projectsData = [
     title: 'Project Management',
     info:
       'A Jira-clone full stack web application that user can create issues and sub-tasks within project.',
-
     url: 'https://jira-client-prod.herokuapp.com/',
     source: 'https://github.com/quan612/IssueManagement',
-    features: [
+    learning_curves: [
       'Easy to understand project structure with separated client and server side.',
       'Written in modern React, functional components with latest hooks api.',
       'Various custom UI elements that are reusable across the site.',
@@ -51,15 +50,39 @@ export const projectsData = [
     phone: '/jira-phone.png',
   },
   {
+    id: 'rental',
+    img_url: '/rental.gif',
+    title: 'Rent Booking Application',
+    info:
+      'A booking application built on MEAN stack - MongoDb, Express, Angular, NodeJs with TypeScript',
+    info2: '',
+    url: 'https://booking-angular.herokuapp.com/',
+    source: 'https://github.com/quan612/rental-booking-angular',
+    backgroundColor: '#d64e00',
+    learning_curves: [
+      'Website development using Angular framework.',
+      'Learnt using linting and TypeScript.',
+      'Building RESTful API with testing on Postman',
+    ],
+    laptop: '',
+    phone: '',
+    stacks: [
+      { name: 'Angular', icon: '/angular.svg' },
+      { name: 'MongoDb', icon: '/mongodb.svg' },
+      { name: 'TypeScript', icon: '/typescript.svg' },
+      { name: 'NodeJs', icon: '/nodejs.svg' },
+    ],
+  },
+  {
     id: 'testlink',
     img_url: '/project-management.png',
     title: 'Test Link Simulation',
     info:
       'My first React application when I tried to learn web development to tailor my skill as a tester. I was thinking to learn unit test with mocha and chai, but I ended up building this application. It has a lot of flaws but I decided to have it as a lesson.',
 
-    url: 'http://test-link-react.herokuapp.com/',
+    url: '',
     source: 'https://github.com/quan612/TestLinkSimulation',
-    features: [
+    learning_curves: [
       'React using hooks API',
       'Simple state management with Redux thunk.',
       'Using a 3rd party API from testlink',
@@ -86,19 +109,6 @@ export const projectsData = [
     laptop: '',
     phone: '',
   },
-
-  {
-    id: 'rental',
-    img_url: '/rental.gif',
-    title: 'Rent Booking Application',
-    info: 'Work in progress - Rental booking application built with Angular, NodeJS and MongoDb',
-    info2: '',
-    url: '',
-    repo: '',
-    backgroundColor: '#d64e00',
-    laptop: '',
-    phone: '',
-  },
   {
     id: 'portfolio',
     img_url: '/portfolio.gif',
@@ -106,7 +116,7 @@ export const projectsData = [
     info: 'Built with Gatsby, React, and Frame Motion',
     info2: '',
     url: '',
-    source: 'https://github.com/quan612/rental-booking-angular',
+    source: 'https://github.com/quan612/portfolio',
     repo: '',
     backgroundColor: '#FFD1DC',
     laptop: '',

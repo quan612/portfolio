@@ -16,7 +16,7 @@ const PortfolioProvider = ({ children }) => {
     title: '',
     info: '',
     backgroundColor: '#2D3E51',
-    features: [],
+    learning_curves: [],
     stacks: [],
     laptop: '',
     phone: '',

@@ -127,11 +127,11 @@ const Project = (props) => {
               </div>
             )}
 
-            {currentProject.features && currentProject.features.length > 0 && (
+            {currentProject.learning_curves && currentProject.learning_curves.length > 0 && (
               <div className="detail-box">
-                <h3>Features</h3>
+                <h3>Learning Curves</h3>
                 <ul>
-                  {currentProject.features.map((feature, index) => {
+                  {currentProject.learning_curves.map((feature, index) => {
                     return (
                       <li key={index}>
                         <p>{feature}</p>
